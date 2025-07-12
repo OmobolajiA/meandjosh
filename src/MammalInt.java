@@ -1,4 +1,22 @@
-package PACKAGE_NAME;
+package animals;
+interface Animal {
+    public void eat();
+    public void travel();
+}
+public class MammalInt implements Animal {
+    public void eat() {
+        System.out.println("Mammal eat");
+    }
+    public void travel() {
+        System.out.println("Mammal travel");
+    }
+    public int noOfLegs() {
+        return 0;
+    }
+    public static void main(String[] args) {
+        MammalInt m = new MammalInt();
+        m.eat();
+        m.travel();
 
-public class MammalInt {
+    }
 }
